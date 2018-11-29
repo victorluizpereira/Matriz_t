@@ -1,2 +1,2 @@
 # Matriz transposta
-*IDE MonoDevelop
+IDE MonoDevelop
