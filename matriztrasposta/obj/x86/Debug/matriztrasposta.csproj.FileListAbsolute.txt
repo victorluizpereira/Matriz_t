@@ -1,0 +1,5 @@
+/home/victor-lp/Projects/matriztrasposta/matriztrasposta/bin/Debug/matriztrasposta.exe
+/home/victor-lp/Projects/matriztrasposta/matriztrasposta/bin/Debug/matriztrasposta.pdb
+/home/victor-lp/Projects/matriztrasposta/matriztrasposta/obj/x86/Debug/matriztrasposta.csproj.CoreCompileInputs.cache
+/home/victor-lp/Projects/matriztrasposta/matriztrasposta/obj/x86/Debug/matriztrasposta.exe
+/home/victor-lp/Projects/matriztrasposta/matriztrasposta/obj/x86/Debug/matriztrasposta.pdb
