@@ -32,7 +32,7 @@ namespace matriztrasposta
 
             for (int i = 0; i < Al; ++i)
             {
-                for (int j = 0; j < Ac; ++j)        // Atribuindo os valores para a matriz
+                for (int j = 0; j < Ac; ++j)        // Atribuindo os valores para a matriz A[,]
                 {
                     Console.Write("\nDigite o valor da matriz A[{0},{1}] >> ", i + 1, j + 1);
                     A[i, j] = Convert.ToInt32(Console.ReadLine());
@@ -44,7 +44,7 @@ namespace matriztrasposta
             for (int i = 0; i < Al; ++i)
             {
                 Console.Write("|");
-                for (int j = 0; j < Ac; ++j)                // Imprimindo a matriz via console
+                for (int j = 0; j < Ac; ++j)                // Imprimindo a matriz A[,] via console
                 {
                     Console.Write("\t" + A[i, j]+"\t|");
                 }
