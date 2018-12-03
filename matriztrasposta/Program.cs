@@ -6,11 +6,13 @@ namespace matriztrasposta
     {
         public static void Main(string[] args)
         {
+            // Declarando as variáveis e matrizes.
             int Al=0, Ac=1;
             int[,] A, At;
 
             Console.WriteLine("\t\t\t=============== Matriz trasposta ================");
-
+            
+            /*  Enquanto a matriz não for quadrática (i e j iguais ex. [4x4]) repita */
             while (Al != Ac)
             {
                 Console.Write("\n\nDigite o valor da linha da matriz A[x,] >> ");
@@ -25,12 +27,12 @@ namespace matriztrasposta
                 }
             }
 
-            A = new int[Al, Ac];
+            A = new int[Al, Ac];        // Iniciando as matrizes
             At = new int[Al, Ac];
 
             for (int i = 0; i < Al; ++i)
             {
-                for (int j = 0; j < Ac; ++j)
+                for (int j = 0; j < Ac; ++j)        // Atribuindo os valores para a matriz
                 {
                     Console.Write("\nDigite o valor da matriz A[{0},{1}] >> ", i + 1, j + 1);
                     A[i, j] = Convert.ToInt32(Console.ReadLine());
@@ -42,7 +44,7 @@ namespace matriztrasposta
             for (int i = 0; i < Al; ++i)
             {
                 Console.Write("|");
-                for (int j = 0; j < Ac; ++j)
+                for (int j = 0; j < Ac; ++j)                // Imprimindo a matriz via console
                 {
                     Console.Write("\t" + A[i, j]+"\t|");
                 }
@@ -51,9 +53,9 @@ namespace matriztrasposta
 
             for (int i = 0; i < Al; ++i)
             {
-                for (int j = 0; j < Ac; ++j)
-                {
-                    if (i != Al + 1 - 1 && j != Ac + 1 - 1)
+                for (int j = 0; j < Ac; ++j)                    // Passando os valores da matriz A[,] para a matriz At[,]
+                {                                               // de forma transposta, no qual os valores diagonais
+                    if (i != Al + 1 - 1 && j != Ac + 1 - 1)     // se invertem.
                     {
                         At[j, i] = A[i, j];
                     }else{
@@ -63,12 +65,12 @@ namespace matriztrasposta
             }
 
             Console.WriteLine("\nA matriz trasposta de A é ..");
-            Console.WriteLine("At = \n");
+            Console.WriteLine("At = \n");   
 
             for (int i = 0; i < Al; ++i)
             {
                 Console.Write("|");
-                for (int j = 0; j < Ac; ++j)
+                for (int j = 0; j < Ac; ++j)                    // Imprimindo a matriz transposta At[,]
                 {
                     Console.Write("\t" + At[i, j]+"\t|");
                 }
